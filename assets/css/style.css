@@ -768,10 +768,10 @@ Icon for all respective meta
 }
 
 .portfolio-bg {
-    background: #fff;
+    /* background: #fff; */
     /* padding-bottom: 5px; */
     margin-bottom: 20px;
-    /* border-bottom: 1px solid #eee; */
+    border: 1px solid #eee;
 }
 
 .portfolio {
