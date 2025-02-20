@@ -755,6 +755,73 @@ Icon for all respective meta
 
 
 /* === SNS-design Section ===================================================== */
+.sns-item {
+    min-height: 235px;
+}
+
+.sns-bg {
+    /* margin-bottom: 20px; */
+    border: 1px solid #eee;
+}
+
+.sns {
+    position: relative;
+    overflow: hidden;
+}
+
+.sns-overlay {
+    position: absolute;
+    background-color: rgba(26, 30, 31, 0.85);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.sns-info,
+.links,
+.sns-overlay {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.sns-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #d03131;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.sns:hover .tt-overlay,
+.sns:hover .links {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.sns:hover .sns-info {
+    bottom: 0;
+}
+
+.sns-info h3 {
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+
 /* === Artwork Section ===================================================== */
 .art_m{
     margin: 40px 0;
@@ -768,10 +835,8 @@ Icon for all respective meta
 }
 
 .portfolio-bg {
-    /* background: #fff; */
-    /* padding-bottom: 5px; */
     margin-bottom: 20px;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 
 .portfolio {
